@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redactr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>WELCOME TO REDACTR</h1>
+            <p>This application helps your scramble portions of your text you don't want to see before sharing on social media</p>
+            <h4>Go ahead and try it now!</h4>
+        </header>
+
+        <section class="form-field">
+            <form name="myform" onsubmit="return scramble_func()">
+                <div class="form-group">
+                    <label>Enter Text Content</label>
+                    <textarea name="content" cols="30" rows="10" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Enter word(s) to scramble </label>
+                    <input type="text" name="word" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Enter symbol to replace word(s) </label>
+                    <input type="text" name="symbol">
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Redact Now</button>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <h4 id="op"></h4>
+        </section>
+
+    </div>
+
+    <script src="redact.js"></script>
+</body>
+</html>
