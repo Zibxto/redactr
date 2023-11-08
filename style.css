@@ -79,4 +79,8 @@ input[type=text], textarea {
     form, .result, .stat {
         width: 100%;
     }
+
+    .main-container {
+        width: 97%;
+    }
 }
