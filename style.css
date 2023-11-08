@@ -74,3 +74,9 @@ input[type=text], textarea {
   .stat {
     margin-top: -3%;
   }
+
+  @media screen and (max-width: 600px) {
+    form, .result, .stat {
+        width: 100%;
+    }
+}
