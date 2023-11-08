@@ -10,25 +10,25 @@
     <div class="main-container">
         <header>
             <h1>WELCOME TO REDACTR</h1>
-            <p>This application helps your scramble portions of your text you don't want to see before sharing on social media</p>
+            <p>This application helps you scramble portions of your text you don't want to see before sharing on social media</p>
             <h4>Go ahead and try it now!</h4>
         </header>
 
         <section class="form-field">
             <form name="myform" onsubmit="return scramble_func()">
                 <div class="form-group">
-                    <label>Enter Text Content</label>
-                    <textarea name="content" cols="30" rows="10" required></textarea>
+                    <label for="content">Enter Text Content</label>
+                    <textarea name="content" id="content" cols="30" rows="10" required></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label>Enter word(s) to scramble </label>
-                    <input type="text" name="word" required>
+                    <label for="word">Enter word(s) to scramble </label>
+                    <input type="text" id="word" name="word" required>
                 </div>
 
                 <div class="form-group">
-                    <label>Enter symbol to replace word(s) </label>
-                    <input type="text" name="symbol">
+                    <label for="symbol">Enter symbol to replace word(s) </label>
+                    <input type="text" id="symbol" name="symbol">
                 </div>
 
                 <div class="form-group">
@@ -37,8 +37,24 @@
             </form>
         </section>
 
-        <section>
-            <h4 id="op"></h4>
+        <section class="result">
+            <h3>Output</h3>
+            <p id="op"></p>
+        </section>
+
+        <section class="stat">
+            <h3>Stats from the above operation</h3>
+            <ul>
+                <li>
+                    Number of words scanned: <strong id="ws"></strong>
+                </li>
+                <li>
+                    Number of words scrambled: <strong id="nws"></strong>
+                </li>
+                <li>
+                    Total number of characters scrambled: <strong id="ns"></strong>   
+                </li>
+            </ul>
         </section>
 
     </div>
